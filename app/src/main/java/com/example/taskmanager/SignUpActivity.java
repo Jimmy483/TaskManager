@@ -108,7 +108,7 @@ ImageView img;
             cpassword.requestFocus();
             return;
         }
-        Detail detail =new Detail(fn,ln,user,pass,image);
+        Detail detail =new Detail(fn,ln,user,pass,"1");
         UserAPI userAPI= URL.getInstance().create(UserAPI.class);
         Call<SignUpResponse> signUpCall= userAPI.registerUser(detail);
         signUpCall.enqueue(new Callback<SignUpResponse>() {

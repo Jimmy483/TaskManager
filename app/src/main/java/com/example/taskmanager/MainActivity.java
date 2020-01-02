@@ -43,6 +43,7 @@ Button button;
             @Override
             public void onClick(View v) {
 
+                login();
             }
         });
     }
